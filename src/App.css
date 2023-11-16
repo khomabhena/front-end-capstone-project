@@ -137,7 +137,7 @@ label {
   font-size: larger;
   font-weight: bold;
 }
-input[type=text], input[type=email], input[type=date], input[type=time]{
+input[type=text], input[type=date], input[type=number], input[type=time], select{
   width: 800px;
   padding: 8px;
   border-radius: 8px;
@@ -145,7 +145,7 @@ input[type=text], input[type=email], input[type=date], input[type=time]{
   background-color: lightgray;
 }
 
-input[type=button] {
+input[type=submit] {
   background-color: #F4CE14;
   font-weight: bold;
   font-size: larger;

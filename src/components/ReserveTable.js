@@ -7,16 +7,25 @@ const ReserveTable = () => {
       <Header />
       <section id='reserve-table'>
           <h1>Reserve a Table</h1>
-          <form>
-              <label htmlFor='fullname'>Full Name</label>
-              <input id='fullname' type='text' name='fullname' />
-              <label htmlFor='date'>Date</label>
-              <input id='date' type='date' name='date' />
-              <label htmlFor='time'>Time</label>
-              <input id='time' type='time' name='time' />
-              <label htmlFor='email'>Email</label>
-              <input id='email' type='email' name='email' />
-              <input type='button' value='Submit' name='Submit' />
+          <form>          <label for="res-date">Choose date</label>
+            <input type="date" id="res-date" />
+            <label for="res-time">Choose time</label>
+            <select id="res-time ">
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+            </select>
+            <label for="guests">Number of guests</label>
+            <input type="number" placeholder="1" min="1" max="10" id="guests" />
+            <label for="occasion">Occasion</label>
+            <select id="occasion">
+                <option>Birthday</option>
+                <option>Anniversary</option>
+            </select>
+            <input type="submit" value="Make Your reservation" />
           </form>
       </section>
     </>
