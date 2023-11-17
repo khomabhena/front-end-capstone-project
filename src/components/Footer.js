@@ -4,17 +4,17 @@ const Footer = () => {
   return (
     <footer id='footer'>
         <section>
-            <img src='../assets/images/logo-vertical-green.png' />
+            <img src='../assets/images/logo-vertical-green.png' alt='footer' />
         </section>
         <section>
             <h3>Doormat Navigation</h3>
             <ul>
-                <li><a href=''>Home</a></li>
-                <li><a href=''>About</a></li>
-                <li><a href=''>Menu</a></li>
-                <li><a href=''>Reservations</a></li>
-                <li><a href=''>Order Online</a></li>
-                <li><a href=''>Login</a></li>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#menu'>Menu</a></li>
+                <li><a href='#reservation'>Reservations</a></li>
+                <li><a href='#order-online'>Order Online</a></li>
+                <li><a href='#login'>Login</a></li>
             </ul>
         </section>
         <section>

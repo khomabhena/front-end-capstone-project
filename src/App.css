@@ -9,6 +9,8 @@ header {
   margin-top: 1rem;
 }
 
+
+
 nav ul {
   display: flex;
   list-style: none;
@@ -73,6 +75,7 @@ main #hero {
   border-radius: 8px;
   border: 0;
   font-weight: bolder;
+  margin-bottom: 1rem;
 }
 
 #specials {
@@ -97,7 +100,6 @@ main #hero {
   background-color: lightgray;
   width: 250px;
   border-radius: 16px;
-  
 }
 
 #specials > article > section section, p {
@@ -120,8 +122,6 @@ main #hero {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 form {
@@ -129,16 +129,16 @@ form {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: 800px;
+  width: 500px;
   margin-top: 2rem;
-}
+}s
 
 label {
   font-size: larger;
   font-weight: bold;
 }
 input[type=text], input[type=date], input[type=number], input[type=time], select{
-  width: 800px;
+  width: 100%;
   padding: 8px;
   border-radius: 8px;
   border: 0;
@@ -153,4 +153,39 @@ input[type=submit] {
   border-radius: 8px;
   margin-top: 3rem;
   padding: 1rem 8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  main #hero {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    background-color: #495E57;
+  }
+
+  #specials > article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  input[type=submit] { 
+    width: 300px;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: large;
+  }
 }
